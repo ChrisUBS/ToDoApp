@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/337be747ec.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="https://res.cdn.office.net/todo/2151454_2.125.2/icons/logo.png">
+    <title>ToDo App</title>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="title-container">
+            <h1>ToDo App</h1>
+        </div>
+    </header>
+
+    <!-- Main Section -->
+    <main>
+        <div class="main-container">
+            <div class="input-container">
+                <input type="text" id="task-input" placeholder="Add a new task" autocomplete="off">
+                <button id="add-button" onclick="addTask()">
+                    <i class="fas fa-plus"></i>
+                </button>
+            </div>
+            <div class="task-container">
+                <ul id="taskList">
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <!-- Script -->
+    <script src="./script.js"></script>
+</body>
+</html>

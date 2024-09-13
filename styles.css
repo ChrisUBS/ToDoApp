@@ -1,0 +1,169 @@
+/* General Styles */
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: #f4f4f4;
+    overflow-x: hidden;
+    text-align: center;
+}
+
+header {
+    background-color: #2795d1;
+    padding: 20px;
+    width: auto;
+    position: relative;
+    margin: 1rem;
+    border-radius: 40px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: white;
+}
+
+/* Main Section */
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 40px;
+}
+
+.main-container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    width: 400px;
+    max-width: 100%;
+}
+
+.input-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    width: 80%;
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus {
+    border-color: #2795d1;
+}
+
+button {
+    background-color: #2795d1;
+    border: none;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-left: 10px;
+}
+
+button i {
+    font-size: 1.2rem;
+}
+
+button:hover {
+    background-color: #2795d1;
+}
+
+/* Task List */
+.task-container {
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+li p {
+    margin: 0;
+    font-size: 1rem;
+    flex-grow: 1;
+    padding-left: 10px;
+}
+
+li i {
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+li .fa-trash {
+    color: #e74c3c;
+}
+
+li .fa-check {
+    color: #2ecc71;
+}
+
+li .fa-check:hover,
+li .fa-trash:hover {
+    color: #34495e;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    .main-container {
+        width: 100%;
+        padding: 20px;
+    }
+
+    input[type="text"] {
+        width: 70%;
+        padding: 8px;
+    }
+
+    button {
+        padding: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    .main-container {
+        padding: 15px;
+    }
+
+    input[type="text"] {
+        width: 65%;
+        padding: 7px;
+    }
+
+    button {
+        padding: 7px;
+    }
+}
